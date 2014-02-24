@@ -11,5 +11,24 @@
     <Filter Include="include">
       <UniqueIdentifier>{efbec6fd-58e4-449c-808d-9fe5131d9b34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{ec7ad5c0-69ba-4861-82f8-13a84271bccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{6bfbbd1d-2136-4678-886d-4baa4ff7003e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\MadMan.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\core\MMSingleton.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\MMThreadInfo.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

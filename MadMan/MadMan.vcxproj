@@ -60,6 +60,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\MadMan.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\core\MMSingleton.h" />
+    <ClInclude Include="include\core\MMThreadInfo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
