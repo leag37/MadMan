@@ -22,6 +22,9 @@
     <ClCompile Include="src\MadMan.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\MMThreadInfo.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\core\MMSingleton.h">
