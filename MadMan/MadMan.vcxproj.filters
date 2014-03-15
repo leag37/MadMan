@@ -17,6 +17,12 @@
     <Filter Include="src\core">
       <UniqueIdentifier>{6bfbbd1d-2136-4678-886d-4baa4ff7003e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\data_structures">
+      <UniqueIdentifier>{5c4b8a8a-9577-484f-9ee8-e50f205ca53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{8e764004-81e0-4490-bfa2-53f86eb9c488}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MadMan.cpp">
@@ -25,12 +31,36 @@
     <ClCompile Include="src\core\MMThreadInfo.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\MMTaskManager.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Task.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="test\TestTask.h">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\MMTimer.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\core\MMSingleton.h">
       <Filter>include\core</Filter>
     </ClInclude>
     <ClInclude Include="include\core\MMThreadInfo.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\MMTaskManager.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\MMTask.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\data_structures\MMLocklessQueue.h">
+      <Filter>include\data_structures</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\MMTimer.h">
       <Filter>include\core</Filter>
     </ClInclude>
   </ItemGroup>

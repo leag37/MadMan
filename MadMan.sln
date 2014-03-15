@@ -5,10 +5,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MadMan", "MadMan\MadMan.vcx
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Optimized|Win32 = Debug_Optimized|Win32
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A212D544-1081-4F0B-A9CE-D790AF7DCE1A}.Debug_Optimized|Win32.ActiveCfg = Debug_Optimized|Win32
+		{A212D544-1081-4F0B-A9CE-D790AF7DCE1A}.Debug_Optimized|Win32.Build.0 = Debug_Optimized|Win32
 		{A212D544-1081-4F0B-A9CE-D790AF7DCE1A}.Debug|Win32.ActiveCfg = Debug|Win32
 		{A212D544-1081-4F0B-A9CE-D790AF7DCE1A}.Debug|Win32.Build.0 = Debug|Win32
 		{A212D544-1081-4F0B-A9CE-D790AF7DCE1A}.Release|Win32.ActiveCfg = Release|Win32

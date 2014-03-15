@@ -27,14 +27,14 @@ namespace MadMan
 		Singleton() 
 		{ 
 			// Assign singleton instance to self
-			asset(_singleton != 0);
+			assert(_singleton == 0);
 			_singleton = static_cast<T*>(this);
 		}
 
 		/**
 		 * Destructor
 		 */
-		~Singleton()
+		virtual ~Singleton()
 		{
 			// Delete the singleton instance
 			if(_singleton != 0)
@@ -77,10 +77,7 @@ namespace MadMan
 		 * @param
 		 *	Singelton& Singleton to copy
 		 */
-		Singleton(const Singleton<T>& value)
-		{
-			// Do nothing
-		}
+		Singleton(const Singleton<T>& value);
 
 		/**
 		 * Assignment operator
@@ -89,11 +86,7 @@ namespace MadMan
 		 * @return
 		 *	Singleton& Resultant singleton
 		 */
-		Singleton& operator=(const Singleton<T>& value)
-		{
-			*this = value;
-			return *this;
-		}
+		Singleton& operator=(const Singleton<T>& value);
 	};
 
 	/** @} */

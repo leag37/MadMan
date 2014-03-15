@@ -23,32 +23,71 @@ namespace MadMan
 		ThreadInfo();
 
 		/**
-		 * Constructor
-		 * @param
-		 *	DWORD The Id for this thread
-		 */
-		ThreadInfo(DWORD threadId);
+		* Constructor
+		* @param
+		*	DWORD The friendly id for this thread
+		* @param
+		*	HANDLE The thread process handle
+		* @param
+		*	DWORD The Id for this thread
+		*/
+		ThreadInfo(DWORD friendlyId, HANDLE threadProc, DWORD threadId);
 
 		/**
-		 * @return
-		 *	DWORD The thread id
-		 */
+		* Destructor
+		*/
+		~ThreadInfo();
+
+		/**
+		* @return
+		*	DWORD The friendly id for this thread
+		*/
+		DWORD getFriendlyId() const;
+
+		/**
+		* @return
+		*	HANDLE The thread process handle
+		*/
+		HANDLE getThreadProc() const;
+
+		/**
+		* @return
+		*	DWORD The thread id
+		*/
 		DWORD getThreadId() const;
 
 		/**
-		 * @return
-		 *	bool True if the thread is active, false otherwise
-		 */
+		* @return
+		*	bool True if the thread is active, false otherwise
+		*/
 		bool getIsActive() const;
 
 		/**
-		 * Set the isActive flag for this thread.
-		 * @param
-		 *	bool Whether this thread is marked as active or inactive
-		 */
-		void setIsActive(bool isActive);
+		* Suspend the thread
+		* @return
+		*	bool True if the thread is successfully suspended, false otherwise
+		*/
+		bool suspend();
 
+		/** 
+		* Wake the thread
+		* @return
+		*	bool True if the thread is successfully resumed, false otherwise
+		*/
+		bool resume();
+		
 	private:
+		/**
+		 * The friendly id for the thread. Each thread has a friendly id that is used for quick lookup
+		 * in the TaskManager
+		 */
+		DWORD _friendlyId;
+
+		/**
+		 * Handle to the thread
+		 */
+		HANDLE _threadProc;
+
 		/**
 		 * The thread id
 		 */
