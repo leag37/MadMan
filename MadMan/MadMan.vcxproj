@@ -102,10 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\core\MMSingleton.h" />
+    <ClInclude Include="include\core\MMSystem.h" />
     <ClInclude Include="include\core\MMTask.h" />
     <ClInclude Include="include\core\MMTaskManager.h" />
     <ClInclude Include="include\core\MMThreadInfo.h" />
     <ClInclude Include="include\core\MMTimer.h" />
+    <ClInclude Include="include\data_structures\MMArray.h" />
     <ClInclude Include="include\data_structures\MMLocklessQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

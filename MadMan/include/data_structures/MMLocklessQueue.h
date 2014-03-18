@@ -15,7 +15,7 @@
 
 namespace MadMan
 {
-	/** \addtogroup data_structures
+	/** \addtogroup DataStructures
 	*	@{
 	*/
 

@@ -63,5 +63,11 @@
     <ClInclude Include="include\core\MMTimer.h">
       <Filter>include\core</Filter>
     </ClInclude>
+    <ClInclude Include="include\core\MMSystem.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\data_structures\MMArray.h">
+      <Filter>include\data_structures</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
